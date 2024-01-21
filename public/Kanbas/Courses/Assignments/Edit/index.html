@@ -1,0 +1,72 @@
+<html>
+  <head></head>
+  <body>
+    <select id="assignment-options">
+      <option value="edit">Edit</option>
+      <option value="speed-grader">Speed Grader</option>
+      <option value="duplicate">Duplicate</option>
+      <option value="delete">Delete</option>
+      <option value="move">Move To...</option>
+      <option value="send">Send To...</option>
+      <option value="copy">Copy To...</option>
+      <option value="share">Share to Commons</option>
+    </select>
+    <hr/>
+    <h2>Assignment Name</h2>
+    <form action="/Kanbas/Courses/Assignments/screen.html">
+      <input id="text-assignment-name" placeholder="Assignment Name"/><br/><br/>
+      
+      <textarea rows="5" placeholder="Assignment Description"></textarea><br/><br/>
+      
+      <label for="text-points">Points</label><br/>
+      <input id="text-points" type="number"/><br/><br/>
+
+      <label for="select-assignment-group"> Assignment Group </label><br/>
+      <select id="select-assignment-group">
+        <option value="assignments">ASSIGNMENTS</option>
+      </select><br/><br/>
+
+      <label for="select-grade-display"> Display Grade as </label><br/>
+      <select id="select-grade-display">
+        <option value="percentage">Percentage</option>
+      </select><br/><br/>
+
+      <label for="select-submission-type"> Submission Type </label><br/>
+      <select id="select-one-genre">
+        <option value="online">Online</option>
+      </select><br/><br/>
+
+      <label>Online Entry Options:</label>
+      <br/>
+      <input type="checkbox" value="text-entry"
+        name="check-entry-options" id="chkbox-text"/>
+      <label for="chkbox-text">Text Entry</label>    <br/>
+      <input type="checkbox" value="url"
+        name="check-entry-options" id="chkbox-url"/>
+      <label for="chkbox-url">Website Url</label>    <br/>
+      <input type="checkbox" value="media-recordings"
+        name="check-entry-options" id="chkbox-media"/>
+      <label for="chkbox-media">Media Recordings</label> <br/>
+      <input type="checkbox" value="student-annotations"
+        name="check-entry-options" id="chkbox-annotation"/>
+      <label for="chkbox-annotation">Student Annotations</label><br/>
+      <input type="checkbox" value="file-uploads"
+        name="check-entry-options" id="chkbox-file"/>
+      <label for="chkbox-file">File Uploads</label><br/><br/>
+
+      <label>Assign</label><br/>
+      <label for="text-assign-to">Assign to</label><br/>
+      <input id="text-assign-to"/><br/><br/>
+
+      <label for="due-date">Due</label><br/>
+      <input id="due-date" type="date"/><br/><br/>
+      <label for="available-date">Available From</label><br/>
+      <input id="available-date" type="date"/><br/><br/>
+      <label for="not-available-date">Until</label><br/>
+      <input id="not-available-date" type="date"/><br/><br/>
+
+      <button>Cancel</button>
+      <button>Save</button>
+    </form>
+  </body>
+</html>

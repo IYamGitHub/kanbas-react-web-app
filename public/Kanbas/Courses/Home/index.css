@@ -8,7 +8,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative
+  position: relative;
+  border-left: 2px solid green;
 }
 
 a {
@@ -95,4 +96,14 @@ a:hover { text-decoration: underline;}
   & p {
     font-size: 12px;
   }
+}
+
+.notif-icon {
+  width: 16px;
+  height: 16px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 100px;
 }

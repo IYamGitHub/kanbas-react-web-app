@@ -15,15 +15,10 @@ a {
   color: #2d3b45;
   text-decoration: none;
 }
+a:hover { text-decoration: underline;}
 
-a:hover {
-  text-decoration: underline;
-}
-
-.main-content {
-  & a {
-    color: #B52828;
-  }
+.main-content a {
+  color: #B52828;
 }
 
 .list-group-item .list-group-item .topic {
@@ -50,13 +45,6 @@ a:hover {
   margin: 0.5rem;
 }
 
-.course-status {
-  .list-group-item {
-    background-color: #f5f5f5;
-    color: black
-  }
-}
-
 .todo {
   .list-group-item {
     margin-bottom: 0.25rem;
@@ -73,5 +61,38 @@ a:hover {
     line-height: 1.125;
     letter-spacing: 0px;
     margin: 0;
+  }
+}
+
+.btn {
+  border-color: #c7cdd1;
+  border-radius: 3px;
+
+  &.btn-grey {
+    background-color: #f5f5f5;
+    color: #2d3b45;
+  }
+  &.btn-grey:hover { background: #e8e8e8; }
+
+  &.btn-red {
+    background-color: #d41b2c;
+    color: white;
+  }
+  &.btn-red:hover { background: #a71523; }
+}
+
+.form-select {
+  text-align: start;
+}
+
+#course-home-sidebar {
+  font-size: 14px;
+
+  & h3  {
+    font-size: 16px;
+  }
+
+  & p {
+    font-size: 12px;
   }
 }

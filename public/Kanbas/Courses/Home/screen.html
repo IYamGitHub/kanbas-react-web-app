@@ -254,15 +254,15 @@
 
       <div class="flex-fill m-3 mt-2 mb-5">
         <div class="module-actions">
-          <button class="btn btn-primary">Collapse All</button>
-          <button class="btn btn-warning">View Progress</button>
-          <select>
-            <option>Publish All</option>
+          <button class="btn btn-grey">Collapse All</button>
+          <button class="btn btn-grey">View Progress</button>
+          <select class="btn form-select btn-grey w-auto">
+            <option selected>Publish All</option>
             <option>Publish All Modules and Items</option>
             <option>Publish Modules only</option>
-            <option>UnPublish All Modules</option>
+            <option>Unpublish All Modules</option>
           </select>
-          <button class="btn btn-danger">+ Module</button>
+          <button class="btn btn-red">+ Module</button>
         </div>
         <hr class="mb-4" />
         <ul class="list-group main-content rounded-0 m-2 wd-modules">
@@ -460,76 +460,80 @@
         </ul>
       </div>
   
-      <div class="d-none d-xl-block p-3 pe-4">
-        <h3>Course Status</h3>
-        <button type="button" class="btn btn-secondary"><i class="fa fa-ban"></i> Unpublish</button>
-        <button type="button" class="btn btn-success"><i class="fa fa-check-circle"></i> Published</button>
-        <ul class="list-group course-status rounded-0 my-2 wd-modules">
-          <li class="list-group-item my-3">
-            <ul class="list-group rounded-0">
-              <li class="list-group-item">
-                <span><i class="fa fa-upload"></i> <a href="#">Import Existing Content</a></span>
-              </li>
-              <li class="list-group-item">
-                <span><i class="fa fa-upload"></i> <a href="#">Import From Commons</a></span>
-              </li>
-              <li class="list-group-item">
-                <span><i class="fa fa-crosshairs"></i> <a href="#">Choose Home Page</a></span>
-              </li>
-              <li class="list-group-item">
-                <span><i class="fa fa-bar-chart"></i> <a href="#">View Course Stream</a></span>
-              </li>
-              <li class="list-group-item">
-                <span><i class="fa fa-bullhorn"></i> <a href="#">New Announcement</a></span>
-              </li>
-              <li class="list-group-item">
-                <span><i class="fa fa-bar-chart"></i> <a href="#">New Analytics</a></span>
-              </li>
-              <li class="list-group-item">
-                <span><i class="fa fa-bell-o"></i> <a href="#">View Course Notifications</a></span>
-              </li>
-            </ul>
-          </li>
-        </ul>
-
-        <div class="d-flex todo align-items-center justify-content-between mt-4" style="width: 325px;">
-          <h3 class="m-0">Coming Up</h3>
-          <span>
-            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-            <a href="#">View Calendar</a>
-          </span>
+      <div id="course-home-sidebar" class="d-none d-xl-block p-3 pe-4 mt-2">
+        <div id="ch-course-status">
+          <h3 class="mb-1 fw-bolder">Course Status</h3>
+          <button type="button" class="btn btn-grey"><i class="fa fa-ban"></i> Unpublish</button>
+          <button type="button" class="btn btn-success"><i class="fa fa-check-circle"></i> Published</button>
+          <ul class="p-0">
+            <li class="d-flex flex-column my-3">
+              <ul class="d-flex flex-column p-0 gap-1">
+                <li class="btn btn-grey text-xxl-start">
+                  <span><i class="fa fa-upload"></i> <a href="#">Import Existing Content</a></span>
+                </li>
+                <li class="btn btn-grey text-xxl-start">
+                  <span><i class="fa fa-upload"></i> <a href="#">Import From Commons</a></span>
+                </li>
+                <li class="btn btn-grey text-xxl-start">
+                  <span><i class="fa fa-crosshairs"></i> <a href="#">Choose Home Page</a></span>
+                </li>
+                <li class="btn btn-grey text-xxl-start">
+                  <span><i class="fa fa-bar-chart"></i> <a href="#">View Course Stream</a></span>
+                </li>
+                <li class="btn btn-grey text-xxl-start">
+                  <span><i class="fa fa-bullhorn"></i> <a href="#">New Announcement</a></span>
+                </li>
+                <li class="btn btn-grey text-xxl-start">
+                  <span><i class="fa fa-bar-chart"></i> <a href="#">New Analytics</a></span>
+                </li>
+                <li class="btn btn-grey text-xxl-start">
+                  <span><i class="fa fa-bell-o"></i> <a href="#">View Course Notifications</a></span>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <hr class="my-1" />
-        <ul class="list-group todo rounded-0 my-2 wd-modules">
-          <li class="list-group-item border-0">
-            <ul class="list-group rounded-0">
-              <li class="list-group-item border-0 px-0">
-                <span>
-                  <i class="fa fa-calendar-o"></i> 
-                  <a href="#">CS4550: Lecture 1</a>
-                  <p>CS4550.12310.90832983</p>
-                  <p>Feb 06 at 11:59pm</p>
-                </span>
-              </li>
-              <li class="list-group-item border-0 px-0">
-                <span>
-                  <i class="fa fa-calendar-o"></i> 
-                  <a href="#">CS4550: Lecture 2</a>
-                  <p>CS4550.12310.90832983</p>
-                  <p>Feb 15 at 11:59pm</p>
-                </span>
-              </li>
-              <li class="list-group-item border-0 px-0">
-                <span>
-                  <i class="fa fa-calendar-o"></i> 
-                  <a href="#">CS4550: Lecture 3</a>
-                  <p>CS4550.12310.90832983</p>
-                  <p>Mar 02 at 11:59pm</p>
-                </span>
-              </li>
-            </ul>
-          </li>
-        </ul>
+
+        <div id="ch-calendar">
+          <div class="d-flex todo align-items-center justify-content-between mt-4" style="width: 325px;">
+            <h3 class="m-0 fw-bolder">Coming Up</h3>
+            <span>
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              <a href="#">View Calendar</a>
+            </span>
+          </div>
+          <hr class="my-1" />
+          <ul class="list-group todo rounded-0 my-2 wd-modules">
+            <li class="list-group-item border-0">
+              <ul class="list-group rounded-0">
+                <li class="list-group-item border-0 px-0">
+                  <span>
+                    <i class="fa fa-calendar-o"></i> 
+                    <a href="#">CS4550: Lecture 1</a>
+                    <p>CS4550.12310.90832983</p>
+                    <p>Feb 06 at 11:59pm</p>
+                  </span>
+                </li>
+                <li class="list-group-item border-0 px-0">
+                  <span>
+                    <i class="fa fa-calendar-o"></i> 
+                    <a href="#">CS4550: Lecture 2</a>
+                    <p>CS4550.12310.90832983</p>
+                    <p>Feb 15 at 11:59pm</p>
+                  </span>
+                </li>
+                <li class="list-group-item border-0 px-0">
+                  <span>
+                    <i class="fa fa-calendar-o"></i> 
+                    <a href="#">CS4550: Lecture 3</a>
+                    <p>CS4550.12310.90832983</p>
+                    <p>Mar 02 at 11:59pm</p>
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

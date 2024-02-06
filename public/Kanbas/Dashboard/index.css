@@ -1,0 +1,47 @@
+.card-title {
+  font-size: 14px;
+  margin: 0;
+}
+
+.card-body {
+  color: dimgrey;
+  
+  & h3 {
+    margin: 0;
+    margin-top: 4px;
+    font-size: 16px;
+  }
+
+  & p {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  & a {
+    z-index: 2;
+    text-decoration: none;
+  }
+  & a:hover {
+    text-decoration: underline;
+  }
+
+  & .card-action-items a {
+    position: relative;
+    color: dimgrey;
+  }
+  & .card-action-items a:hover {
+    color: #d41b2c;
+  }
+
+  & i {
+    font-size: 1.2em;
+  }
+}
+
+.card {
+  flex-grow: 1;
+}
+
+.row>*{
+  gap: 6px;
+}

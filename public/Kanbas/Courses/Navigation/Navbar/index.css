@@ -1,0 +1,22 @@
+.wd-navigation-bar {
+  background-color: white;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 20px;
+  color: #B52828;
+}
+.wd-navigation-bar li {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.wd-navigation-bar a {
+  color: #B52828;
+  text-decoration: none;
+}
+
+.wd-navigation-bar .fa-eye-slash {
+  margin-left: 1.5rem;
+  color: lightslategrey;
+}

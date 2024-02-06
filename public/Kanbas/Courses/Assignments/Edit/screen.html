@@ -1,4 +1,331 @@
 <html>
+  <head>
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script defer="defer" src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/Navbar/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/Navbar/index.css" />
+  </head>
+  <body>
+    
+    <div class="d-block d-md-none mb-4" id="kanbas-navbar">
+      <nav class="navbar navbar-dark bg-dark px-2">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#kanbas-navigation" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#course-navigation" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-chevron-down"></i>
+        </button>
+      </nav>
+      <div class="collapse mb-3" id="kanbas-navigation" data-bs-parent="#kanbas-navbar">
+        <div class="p-4 shadow">
+          <ul class="wd-kanbas-navigation-bar">
+            <li class="wd-active">
+              <a href="/Kanbas/Dashboard/screen.html"><span><i class="fa fa-tachometer"></i>Dashboard</span></a>
+              <li>
+                <a href="/Kanbas/Account/Profile/screen.html">
+                  <span>
+                    <i class="fa fa-user-circle-o account"></i>
+                    Account
+                  </span>
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </li>
+            </li>
+            <li>
+              <a href="/Kanbas/Courses/Home/screen.html">
+                <span><i class="fa fa-book"></i>Courses</span>
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"><span><i class="fa fa-calendar"></i>Calendar</span></a>
+            </li>
+            <li>
+              <a href="#"><span><i class="fa fa-inbox"></i>Inbox</span></a>
+            </li>
+            <li>
+              <a href="#"><span><i class="fa fa-desktop"></i>Studio</span></a>
+            </li>
+            <li>
+              <a href="#"><span><i class="fa fa-arrow-right"></i>Commons</span></a>
+            </li>
+            <li>
+              <a href="#"><span><i class="fa fa-clock-o"></i>History</span>
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="fa fa-question-circle-o"></i>Help</span>
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse mb-3" id="course-navigation" data-bs-parent="#kanbas-navbar">
+        <div class="bg-white p-2 shadow">
+          <ul class="wd-navigation-bar">
+            <li class="wd-active">
+              <i class="fa fa-home"></i>
+              <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+            </li>
+            <li>
+              <i class="fa fa-sitemap"></i>
+              <a href="#">Modules</a>
+            </li>
+            <li>
+              <i class="fa fa-plug"></i>
+              <a href="#">Piazza</a>
+            </li>
+            <li>
+              <i class="fa fa-plug"></i>
+              <a href="#">Zoom Meetings</a>
+            </li>
+            <li>
+              <i class="fa fa-file-text-o"></i>
+              <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+            </li>
+            <li>
+              <i class="fa fa-rocket"></i>
+              <a href="#">Quizzes</a>
+            </li>
+            <li>
+              <i class="fa fa-book"></i>
+              <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+            </li>
+            <li>
+              <i class="fa fa-users"></i>
+              <a href="#">People</a>
+            </li>
+            <li>
+              <i class="fa fa-plug"></i>
+              <a href="#">Panopto Video</a>
+            </li>
+            <li>
+              <i class="fa fa-comments"></i>
+              <a href="#">Discussions</a>
+              <i class="fa fa-eye-slash"></i>
+            </li>
+            <li>
+              <i class="fa fa-bullhorn"></i>
+              <a href="#">Announcements</a>
+              <i class="fa fa-eye-slash"></i>
+            </li>
+            <li>
+              <i class="fa fa-file-text-o"></i>
+              <a href="#">Pages</a>
+              <i class="fa fa-eye-slash"></i>
+            </li>
+            <li>
+              <i class="fa fa-folder-o"></i>
+              <a href="#">Files</a>
+              <i class="fa fa-eye-slash"></i>
+            </li>
+            <li>
+              <i class="fa fa-file-text-o"></i>
+              <a href="#">Rubrics</a>
+              <i class="fa fa-eye-slash"></i>
+            </li>
+            <li>
+              <i class="fa fa-bullseye"></i>
+              <a href="#">Outcomes</a>
+              <i class="fa fa-eye-slash"></i>
+            </li>
+            <li>
+              <i class="fa fa-circle-thin"></i>
+              <a href="#">Collaborations</a>
+              <i class="fa fa-eye-slash"></i>
+            </li>
+            <li>
+              <i class="fa fa-file-text-o"></i>
+              <a href="#">Syllabus</a>
+              <i class="fa fa-eye-slash"></i>
+            </li>
+            <li>
+              <i class="fa fa-plug"></i>
+              <a href="#">Progress Reports (EAB Navigate)</a>
+            </li>
+            <li>
+              <i class="fa fa-cog"></i>
+              <a href="#">Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div class="d-none d-md-block">
+        <ul class="wd-kanbas-navigation">
+           <li><a href="http://northeastern.edu"><img src="/images/northeastern-logo.png" /></a></li>
+          <li>
+            <a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user-circle-o account"></i>Account</a>
+          </li>
+          <li>
+            <a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i>Dashboard</a>
+          </li>
+          <li class="wd-active">
+            <a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-calendar"></i>Calendar</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-inbox"></i>Inbox</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-clock-o"></i>History</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-desktop"></i>Studio</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-arrow-right"></i>Commons</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-question-circle-o"></i>Help</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-none d-md-block">
+        <ul class="wd-navigation">
+          <li>
+            <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Modules</a>
+          </li>
+          <li>
+            <a href="#">Piazza</a>
+          </li>
+          <li>
+            <a href="#">Zoom Meetings</a>
+          </li>
+          <li class="wd-active">
+            <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+          </li>
+          <li>
+            <a href="#">Quizzes</a>
+          </li>
+          <li>
+            <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+          </li>
+          <li>
+            <a href="#">People</a>
+          </li>
+          <li>
+            <a href="#">Panopto Video</a>
+          </li>
+          <li>
+            <a href="#">Discussions</a>
+          </li>
+          <li>
+            <a href="#">Announcements</a>
+          </li>
+          <li>
+            <a href="#">Pages</a>
+          </li>
+          <li>
+            <a href="#">Files</a>
+          </li>
+          <li>
+            <a href="#">Rubrics</a>
+          </li>
+          <li>
+            <a href="#">Outcomes</a>
+          </li>
+          <li>
+            <a href="#">Collaborations</a>
+          </li>
+          <li>
+            <a href="#">Syllabus</a>
+          </li>
+          <li>
+            <a href="#">Settings</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <select id="assignment-options">
+          <option value="edit">Edit</option>
+          <option value="speed-grader">Speed Grader</option>
+          <option value="duplicate">Duplicate</option>
+          <option value="delete">Delete</option>
+          <option value="move">Move To...</option>
+          <option value="send">Send To...</option>
+          <option value="copy">Copy To...</option>
+          <option value="share">Share to Commons</option>
+        </select>
+        <hr/>
+        <h2>Assignment Name</h2>
+        <form action="/Kanbas/Courses/Assignments/screen.html">
+          <input id="text-assignment-name" placeholder="Assignment Name"/><br/><br/>
+          
+          <textarea rows="5" placeholder="Assignment Description"></textarea><br/><br/>
+          
+          <label for="text-points">Points</label><br/>
+          <input id="text-points" type="number"/><br/><br/>
+    
+          <label for="select-assignment-group"> Assignment Group </label><br/>
+          <select id="select-assignment-group">
+            <option value="assignments">ASSIGNMENTS</option>
+          </select><br/><br/>
+    
+          <label for="select-grade-display"> Display Grade as </label><br/>
+          <select id="select-grade-display">
+            <option value="percentage">Percentage</option>
+          </select><br/><br/>
+    
+          <label for="select-submission-type"> Submission Type </label><br/>
+          <select id="select-one-genre">
+            <option value="online">Online</option>
+          </select><br/><br/>
+    
+          <label>Online Entry Options:</label>
+          <br/>
+          <input type="checkbox" value="text-entry"
+            name="check-entry-options" id="chkbox-text"/>
+          <label for="chkbox-text">Text Entry</label>    <br/>
+          <input type="checkbox" value="url"
+            name="check-entry-options" id="chkbox-url"/>
+          <label for="chkbox-url">Website Url</label>    <br/>
+          <input type="checkbox" value="media-recordings"
+            name="check-entry-options" id="chkbox-media"/>
+          <label for="chkbox-media">Media Recordings</label> <br/>
+          <input type="checkbox" value="student-annotations"
+            name="check-entry-options" id="chkbox-annotation"/>
+          <label for="chkbox-annotation">Student Annotations</label><br/>
+          <input type="checkbox" value="file-uploads"
+            name="check-entry-options" id="chkbox-file"/>
+          <label for="chkbox-file">File Uploads</label><br/><br/>
+    
+          <label>Assign</label><br/>
+          <label for="text-assign-to">Assign to</label><br/>
+          <input id="text-assign-to"/><br/><br/>
+    
+          <label for="due-date">Due</label><br/>
+          <input id="due-date" type="date"/><br/><br/>
+          <label for="available-date">Available From</label><br/>
+          <input id="available-date" type="date"/><br/><br/>
+          <label for="not-available-date">Until</label><br/>
+          <input id="not-available-date" type="date"/><br/><br/>
+    
+          <button>Cancel</button>
+          <button>Save</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<html>
   <head></head>
   <body>
     <table>

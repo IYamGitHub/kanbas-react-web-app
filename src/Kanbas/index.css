@@ -1,0 +1,17 @@
+.content {
+  flex-grow: 1;
+  @media (min-width: 768px) { 
+    margin-left: 84px;
+  }
+}
+
+.kanbas-red {
+ color: #b52828;
+}
+
+.text-ellipsis {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

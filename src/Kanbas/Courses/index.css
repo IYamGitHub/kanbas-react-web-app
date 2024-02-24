@@ -1,0 +1,64 @@
+.custom-breadcrumb {
+  --bs-breadcrumb-divider: ">";
+}
+
+.breadcrumb > li > span {
+  font-size: 1.125rem;
+}
+
+.font-black {
+  color: black;
+}
+
+.left-side {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+}
+
+.course-content {
+  margin-left: 190px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.content-no-nav {
+  margin-left: 0;
+}
+
+.nav-bars {
+  cursor: pointer;
+}
+
+.wd-kanbas-navigation-bar {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+.wd-kanbas-navigation-bar li {
+  font-size: 16px;
+  text-align: center;
+}
+
+.wd-kanbas-navigation-bar a {
+  color: #b52828;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.wd-kanbas-navigation-bar a svg {
+  color: #b52828;
+  font-size: 2em;
+  margin-bottom: 5px;
+  margin-right: 16px;
+}
+
+.wd-kanbas-navigation-bar .account {
+  color: gray;
+}

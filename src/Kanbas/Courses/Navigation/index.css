@@ -1,0 +1,35 @@
+.course-nav-wrapper {
+  width: 190px;
+  position: sticky;
+  top: 0;
+  padding: 24px 12px 24px 24px;
+}
+
+.wd-navigation {
+  background-color: white;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.wd-navigation li {
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+.wd-navigation li.wd-active {
+  border-left: 2px solid black;
+}
+.wd-navigation li.wd-active a {
+  color: black;
+}
+.wd-navigation a {
+  color: #B52828;
+  text-decoration: none;
+}
+
+.wd-section-header {
+  font-size: 11px;
+  font-style: italic;
+  margin-left: 15px;
+  margin-bottom: 12px;
+}

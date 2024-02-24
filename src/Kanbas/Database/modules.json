@@ -1,0 +1,350 @@
+[
+  {
+    "course": "CS3800",
+    "modules": [
+      { 
+        "_id":"CS3800_Course_Info",
+        "name": "Course Information", 
+        "lessons": [
+          {
+            "name": "CS3800_syllabus.pdf",
+            "type": "file"
+          },
+          {
+            "name": "Scribe Notes",
+            "type": "page"
+          }
+        ]
+      },
+      { 
+        "_id":"CS3800_PS1",
+        "name": "PS1", 
+        "lessons": [
+          {
+            "name": "ps1.pdf",
+            "type": "file"
+          },
+          {
+            "name": "PS1",
+            "type": "assignment"
+          },
+          {
+            "name": "ps1.tex",
+            "type": "file"
+          },
+          {
+            "name": "ps1-sol.pdf",
+            "type": "file"
+          }
+        ]
+      },
+      { 
+        "_id":"CS3800_PS2",
+        "name": "PS2", 
+        "lessons": [
+          {
+            "name": "ps2.pdf",
+            "type": "file"
+          },
+          {
+            "name": "PS2",
+            "type": "assignment"
+          },
+          {
+            "name": "ps2.tex",
+            "type": "file"
+          },
+          {
+            "name": "ps2-sol.pdf",
+            "type": "file"
+          }
+        ]
+      },
+      { 
+        "_id":"CS3800_PS3",
+        "name": "PS3", 
+        "lessons": [
+          {
+            "name": "ps3.pdf",
+            "type": "file"
+          },
+          {
+            "name": "PS3",
+            "type": "assignment"
+          },
+          {
+            "name": "ps3.tex",
+            "type": "file"
+          },
+          {
+            "name": "ps3-sol.pdf",
+            "type": "file"
+          }
+        ]
+      },
+      { 
+        "_id":"CS3800_PS4",
+        "name": "PS4", 
+        "lessons": [
+          {
+            "name": "ps4.pdf",
+            "type": "file"
+          },
+          {
+            "name": "PS4",
+            "type": "assignment"
+          },
+          {
+            "name": "ps4.tex",
+            "type": "file"
+          },
+          {
+            "name": "ps4-solutions.pdf",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "CS4550",
+    "modules": [
+      { 
+        "_id":"CS4550_Week0",
+        "name": "Week 0 - INTRO", 
+        "lessons": [
+          {
+            "name": "LEARNING OBJECTIVES",
+            "type": "header"
+          },
+          {
+            "name": "Introduction to the course",
+            "type": ""
+          },
+          {
+            "name": "Learn what is Web Development",
+            "type": ""
+          },
+          {
+            "name": "Creating a development environment",
+            "type": ""
+          },
+          {
+            "name": "Creating a Web Application",
+            "type": ""
+          },
+          {
+            "name": "Getting started with the 1st assignment",
+            "type": ""
+          },
+          {
+            "name": "READING",
+            "type": "header"
+          },
+          {
+            "name": "Full Stack Developer - Chapter 1 - Introduction",
+            "type": ""
+          },
+          {
+            "name": "Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML",
+            "type": ""
+          },
+          {
+            "name": "SLIDES",
+            "type": "header"
+          },
+          {
+            "name": "Introduction to Web Development",
+            "type": "link"
+          },
+          {
+            "name": "Creating an HTTP server with Node.js",
+            "type": "link"
+          },
+          {
+            "name": "Creating a React Application",
+            "type": "link"
+          }
+        ]
+      },
+      { 
+        "_id":"CS4550_Week1",
+        "name": " Week 1 - Course Introduction, Syllabus, Agenda, Internet, Web, HTML, Assignment 1", 
+        "lessons": [
+          {
+            "name": "LEARNING OBJECTIVES",
+            "type": "header"
+          },
+          {
+            "name": "Learn how to create user interfaces with HTML",
+            "type": ""
+          },
+          {
+            "name": "Keep working on assignment 1",
+            "type": ""
+          },
+          {
+            "name": "Deploy the assignment to Netlify",
+            "type": ""
+          },
+          {
+            "name": "READING",
+            "type": "header"
+          },
+          {
+            "name": "Full Stack Developer - Chapter 1 - Introduction",
+            "type": ""
+          },
+          {
+            "name": "Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML",
+            "type": ""
+          },
+          {
+            "name": "SLIDES",
+            "type": "header"
+          },
+          {
+            "name": "Introduction to HTML and the DOM",
+            "type": "link"
+          },
+          {
+            "name": "Formatting Web content with Headings and Paragraphs",
+            "type": "link"
+          },
+          {
+            "name": "Formatting content with Lists and Tables",
+            "type": "link"
+          },
+          {
+            "name": "Creating Web Forms",
+            "type": "link"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "CS4400",
+    "modules": [
+      { 
+        "_id":"CS4400_plait",
+        "name": "Programming in Plait", 
+        "lessons": [
+          {
+            "name": "Lecture: Introduction and overview",
+            "type": "link"
+          },
+          {
+            "name": "Lecture: Programming in Racket and Plait",
+            "type": "link"
+          }
+        ]
+      },
+      { 
+        "_id":"CS4400_calc_cond",
+        "name": "Syntax & semantics of calc and cond", 
+        "lessons": [
+          {
+            "name": "Syntax & semantics of calc",
+            "type": "link"
+          },
+          {
+            "name": "s-expressions and conditionals",
+            "type": "link"
+          }
+        ]
+      },
+      { 
+        "_id":"CS4400_let_func",
+        "name": "Syntax & semantics of calc and cond", 
+        "lessons": [
+          {
+            "name": "Lecture: Cond and let-binding",
+            "type": "link"
+          },
+          {
+            "name": "Lecture: Lambda calculus I",
+            "type": "link"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "course": "CS3700",
+    "modules": [
+      { 
+        "_id":"CS3700_architecture",
+        "name": "Architecture", 
+        "lessons": [
+          {
+            "name": "Intro",
+            "type": "link"
+          },
+          {
+            "name": "History",
+            "type": "link"
+          },
+          {
+            "name": "Physical Layer",
+            "type": "link"
+          },
+          {
+            "name": "Data Link Layer",
+            "type": "link"
+          },
+          {
+            "name": "Bridging and Switching",
+            "type": "link"
+          },
+          {
+            "name": "Network Layer",
+            "type": "link"
+          },
+          {
+            "name": "Inter-domain Routing",
+            "type": "link"
+          },
+          {
+            "name": "Intra-domain Routing",
+            "type": "link"
+          },
+          {
+            "name": "Transport Layer",
+            "type": "link"
+          },
+          {
+            "name": "Transport Layer Security",
+            "type": "link"
+          }
+        ]
+      },
+      { 
+        "_id":"CS3700_web",
+        "name": "Web and Networks", 
+        "lessons": [
+          {
+            "name": "DNS",
+            "type": "link"
+          },
+          {
+            "name": "Web",
+            "type": "link"
+          },
+          {
+            "name": "Fault Tolerance",
+            "type": "link"
+          },
+          {
+            "name": "RAFT",
+            "type": "link"
+          },
+          {
+            "name": "Bittorrent",
+            "type": "link"
+          }
+        ]
+      }
+    ]
+  }
+]

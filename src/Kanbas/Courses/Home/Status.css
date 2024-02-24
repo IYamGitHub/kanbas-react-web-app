@@ -1,0 +1,12 @@
+#course-home-sidebar {
+  font-size: 14px;
+  width: 288px;
+
+  & h3  {
+    font-size: 16px;
+  }
+
+  & p {
+    font-size: 12px;
+  }
+}

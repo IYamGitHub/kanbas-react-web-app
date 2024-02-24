@@ -8,7 +8,7 @@ const AddingAndRemovingDataToFromArrays = () => {
 
   return (
     <>
-      <h3>Array index and length</h3>
+      <h3>Add and remove data to arrays</h3>
       numberArray1 = {numberArray1}<br/>
       stringArray1 = {stringArray1}<br/>
     </>

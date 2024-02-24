@@ -220,6 +220,16 @@
             "type": "link"
           }
         ]
+      },
+      { 
+        "_id":"CS3700_extras",
+        "name": "Extra Resources", 
+        "lessons": [
+          {
+            "name": "Some extra resources",
+            "type": "link"
+          }
+        ]
       }
     ]
   },
@@ -341,6 +351,16 @@
           },
           {
             "name": "Bittorrent",
+            "type": "link"
+          }
+        ]
+      },
+      { 
+        "_id":"CS3700_extras",
+        "name": "Extra Resources", 
+        "lessons": [
+          {
+            "name": "Some extra resources",
             "type": "link"
           }
         ]

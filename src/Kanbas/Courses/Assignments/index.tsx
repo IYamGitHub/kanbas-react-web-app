@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
 import { RiDraggable } from "react-icons/ri";
 import { LuFileEdit } from "react-icons/lu";
@@ -29,7 +29,7 @@ function Assignments() {
           </div>
         </div>
 
-        <hr className="my-2"/>
+        <hr className="my-2" />
 
         <ul className="list-group main-content rounded-0 my-4 wd-modules">
           <li className="list-group-item">
@@ -52,13 +52,15 @@ function Assignments() {
                   <span className="float-start me-2 d-flex align-items-center">
                     <RiDraggable className="me-1" />
                     <LuFileEdit className="text-success me-3" />
-                    <div>
+                    <Link className="text-black"
+                      to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
+                    >
                       <p className="m-0">{assignment.title}</p>
                       <span className="d-inline-flex text-secondary">
                         <p className="text-danger m-0 me-1">Multiple Modules</p>{" "}
                         | Due {assignment.due_date} | {assignment.points} pts
                       </span>
-                    </div>
+                    </Link>
                   </span>
                   <span className="float-end">
                     <FaCheckCircle className="text-success" />

@@ -12,12 +12,6 @@
   border-left: 2px solid green;
 }
 
-a {
-  color: #2d3b45;
-  text-decoration: none;
-}
-a:hover { text-decoration: underline;}
-
 .main-content a {
   color: #B52828;
 }
@@ -84,15 +78,4 @@ a:hover { text-decoration: underline;}
 
 .form-select {
   text-align: start;
-}
-
-
-.notif-icon {
-  width: 16px;
-  height: 16px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  border-radius: 100px;
 }

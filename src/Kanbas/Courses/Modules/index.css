@@ -13,7 +13,7 @@
 }
 
 .main-content a {
-  color: #B52828;
+  color: #b52828;
 }
 
 .list-group-item .list-group-item .topic {
@@ -38,22 +38,26 @@
   display: flex;
   gap: 5px;
   justify-content: end;
+}
 
-  .btn {
-    border-color: #c7cdd1;
-    border-radius: 3px;
-  
-    &.btn-grey {
-      background-color: #f5f5f5;
-      color: #2d3b45;
-    }
-    &.btn-grey:hover { background: #e8e8e8; }
-  
-    &.btn-red {
-      background-color: #d41b2c;
-      color: white;
-    }
-    &.btn-red:hover { background: #a71523; }
+.kanbas .btn {
+  border-color: #c7cdd1;
+  border-radius: 3px;
+
+  &.btn-grey {
+    background-color: #f5f5f5;
+    color: #2d3b45;
+  }
+  &.btn-grey:hover {
+    background: #e8e8e8;
+  }
+
+  &.btn-red {
+    background-color: #d41b2c;
+    color: white;
+  }
+  &.btn-red:hover {
+    background: #a71523;
   }
 }
 
@@ -62,8 +66,8 @@
     margin-bottom: 0.25rem;
   }
 
-  & a{
-    color: #B52828;
+  & a {
+    color: #b52828;
     margin-bottom: 3px;
   }
 
@@ -76,6 +80,21 @@
   }
 }
 
-.form-select {
-  text-align: start;
+.input-group {
+  border-color: #c7cdd1;
+  
+  & input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 3px;
+  }
+  & input:focus {
+    border-color: #2d3b45;
+    box-shadow: none;
+  }
+
+  & button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }

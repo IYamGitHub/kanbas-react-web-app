@@ -1,4 +1,3 @@
-import { courses } from "../../Kanbas/Database";
 import {
   Navigate,
   Route,
@@ -41,7 +40,7 @@ type CourseContextType = Course | null;
 const CourseContext = createContext<CourseContextType>(null);
 export const useCourse = () => useContext(CourseContext);
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId) || null;
   const { pathname } = useLocation();
